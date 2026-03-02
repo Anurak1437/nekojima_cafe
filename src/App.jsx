@@ -4,7 +4,7 @@ import { LanguageProvider } from './Context/LanguageContext'
 import { SearchProvider } from './Context/SearchContext'
 import Header from './Components/Header'
 import Navbar from './Components/Navbar'
-import Home from './Components/Home'
+import WelcomePage from './Components/WelcomePage'
 import CategoryPage from './Components/CategoryPage'
 import Cart from './Components/Cart'
 import Checkout from './Components/Checkout'
@@ -20,7 +20,7 @@ function App() {
             <Header />
             <Navbar />
             <Routes>
-              <Route path="/" element={<CategoryPage category="specialmenus" />} />
+              <Route path="/" element={<WelcomePage />} />
               <Route path="/category/:category" element={<CategoryPage />} />
               <Route path="/cart" element={<Cart />} />
               <Route path="/checkout" element={<Checkout />} />

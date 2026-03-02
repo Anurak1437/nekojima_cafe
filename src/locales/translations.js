@@ -16,6 +16,12 @@ export const translations = {
       title: 'Nekojima Cafe',
       tagline: 'สนุกสนานกับแมว ด้วยอาหารอร่อย'
     },
+    // Welcome screen
+    welcome: {
+      greeting: 'Welcome To Nekojima Cafe',
+      startOrder: 'เริ่มสั่งเมนู',
+      table: 'โต๊ะ'
+    },
     // Home
     home: {
       title: 'เมนูอาหาร',
@@ -96,6 +102,12 @@ export const translations = {
     header: {
       title: 'Nekojima Cafe',
       tagline: 'Enjoy delicious food with cats'
+    },
+    // Welcome screen
+    welcome: {
+      greeting: 'Welcome To Nekojima Cafe',
+      startOrder: 'Start Order',
+      table: 'Table'
     },
     // Home
     home: {

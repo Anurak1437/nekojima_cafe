@@ -41,18 +41,21 @@
 
 .food-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  /* Desktop: 3 columns */
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   margin-bottom: 2rem;
 }
 
+/* Tablet: 2 columns */
 @media (max-width: 1024px) {
   .food-grid {
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
   }
 }
 
+/* Small tablet/large mobile: 2 columns with adjusted spacing */
 @media (max-width: 768px) {
   .food-list-container {
     padding: 0 1rem;
@@ -69,6 +72,7 @@
   }
 }
 
+/* Mobile: 1 column */
 @media (max-width: 480px) {
   .food-grid {
     grid-template-columns: 1fr;

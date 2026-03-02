@@ -1,0 +1,122 @@
+.settings-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  min-height: 80vh;
+}
+
+.settings-content {
+  background: white;
+  padding: 3rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.settings-content h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 3rem;
+  font-size: 2rem;
+}
+
+.settings-section {
+  margin-bottom: 3rem;
+}
+
+.settings-item {
+  margin-bottom: 2rem;
+}
+
+.settings-label {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.language-options {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.language-btn {
+  padding: 1rem 1.5rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  background: white;
+  color: #333;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.language-btn:hover {
+  border-color: #ff69b4;
+  color: #ff69b4;
+  transform: translateY(-2px);
+}
+
+.language-btn.active {
+  background: linear-gradient(135deg, #ff69b4, #ff8fc7);
+  color: white;
+  border-color: #ff69b4;
+  box-shadow: 0 4px 12px rgba(255, 105, 180, 0.3);
+}
+
+.settings-info {
+  background: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid #ff69b4;
+  margin-top: 2rem;
+}
+
+.settings-info p {
+  color: #666;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.settings-info strong {
+  color: #333;
+}
+
+.back-btn {
+  width: 100%;
+  margin-top: 2rem;
+  background: linear-gradient(135deg, #ff69b4, #ff8fc7);
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+
+.back-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 105, 180, 0.3);
+}
+
+@media (max-width: 768px) {
+  .settings-container {
+    padding: 1rem;
+  }
+
+  .settings-content {
+    padding: 1.5rem;
+  }
+
+  .language-options {
+    grid-template-columns: 1fr;
+  }
+}
